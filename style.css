@@ -84,6 +84,7 @@ body {
 .section h2 {
   margin-bottom: 20px;
   font-size: 32px;
+  text-align: center;
 }
 
 .light {
@@ -195,3 +196,37 @@ body {
 .btn:hover {
   background: #0369a1;
 }
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #0f172a;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
